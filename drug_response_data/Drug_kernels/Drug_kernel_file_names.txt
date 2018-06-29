@@ -1,0 +1,10 @@
+Kd_PubChem.txt
+Kd_circular.txt
+Kd_estate.txt
+Kd_ext.txt
+Kd_graph.txt
+Kd_hybr.txt
+Kd_kr.txt
+Kd_maccs.txt
+Kd_sp.txt
+Kd_std.txt

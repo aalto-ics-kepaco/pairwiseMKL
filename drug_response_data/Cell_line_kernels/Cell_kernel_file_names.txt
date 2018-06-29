@@ -1,0 +1,12 @@
+Kc_cn_146.txt
+Kc_cn_270.txt
+Kc_cn_417.txt
+Kc_expression_147.txt
+Kc_expression_163.txt
+Kc_expression_177.txt
+Kc_methylation_176.txt
+Kc_methylation_210.txt
+Kc_methylation_252.txt
+Kc_mutation_132.txt
+Kc_mutation_57.txt
+Kc_mutation_71.txt
