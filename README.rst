@@ -38,6 +38,8 @@ pairwiseMKL requires `cvxopt <https://cvxopt.org/>`_ package for convex optimiza
 It can be installed, e.g., by:
 conda install -c conda-forge cvxopt
 
+This project is based on python 3. It is recommended to use python 3.5 to use cvxopt package on python 3.
+
 
 
 Citing pairwiseMKL
