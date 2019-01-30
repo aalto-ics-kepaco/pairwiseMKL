@@ -105,7 +105,7 @@ def compute_a_regression(Ka_list, Kb_list, Y):
     if np.isnan(Y).any() == True:
         nan_ids_remaining = np.where(np.isnan(Y))
         global_mean = np.nanmean(Y.ravel(order = 'C'))
-        Y[nan_ids_remaining] = np.take(global_mean,nan_ids_remaining[0])
+        Y[nan_ids_remaining] = global_mean
         
     # Compute feature vectors for each label value  
     Psi_y = response_kernel_features(Y)
