@@ -74,13 +74,12 @@ def compute_M(Ka_list, Kb_list):
             # Compute  < K_k, K_l>_F
             M[i_pairwise_k, h_col_temp] = calculate_element(Q, Ka_list[i], Ka_list[ii], Kb_list[j], Kb_list[jj])
             M[h_col_temp, i_pairwise_k] = M[i_pairwise_k, h_col_temp]
-        
-            # diagonal(M) =  ( ||K_k||_F )^2
-            M[i_pairwise_k, h_col_start-1] = calculate_element(Q, Ka_list[i], Ka_list[i], Kb_list[j], Kb_list[j])
 
             h_col_temp = h_col_temp + 1
-    M[i_pairwise_k,i_pairwise_k] = calculate_element(Q, Ka_list[i], Ka_list[i], Kb_list[j], Kb_list[j])
 
+        # diagonal(M) =  ( ||K_k||_F )^2
+        M[i_pairwise_k, i_pairwise_k] = calculate_element(Q, Ka_list[i], Ka_list[i], Kb_list[j], Kb_list[j])
+        
     return M
 
 
