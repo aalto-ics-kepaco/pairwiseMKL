@@ -23,7 +23,7 @@ Folder drug_response_data contains drug response in cancer cell lines dataset us
 Script main.py demonstrates the usage of pairwiseMKL.
 
 The computations can be easily parallized using array jobs, which is especially useful when working with large datasets. Script main_precalculate_M_arrayjob.py shows how to calculate each row of the matrix M needed to find kernel weights using array jobs. The script takes a row number of the matrix M as input. In case of drug response dataset with 120 pairwise kernels, the corresponding bash script should contain #SBATCH --array=0-119.
-Given precalculated matrix M, script main_arrayjob_using_precalculated_M.py demonstrates how to run each outer cross validation (CV) loop as a separate array job. This script takes a number identyfying the outer CV loop as input. In the pairwiseMKL paper, we used 10x3 nested CV (10 outer folds, 3 inner folds), and thus the corresponding bash script should contain #SBATCH --array=0-9.
+Given pre-calculated matrix M, script main_arrayjob_using_precalculated_M.py demonstrates how to run each outer cross validation (CV) loop as a separate array job. This script takes a number identifying the outer CV loop as input. In the pairwiseMKL paper, we used 10x3 nested CV (10 outer folds, 3 inner folds), and thus the corresponding bash script should contain #SBATCH --array=0-9.
 
 
 
